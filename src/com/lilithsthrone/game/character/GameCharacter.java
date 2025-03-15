@@ -21237,7 +21237,7 @@ public abstract class GameCharacter implements XMLSaving {
 				}
 				
 			// Pregnancy stacking modification here -- Ysette
-			if(Main.game.isInSex() && (this.hasTraitActivated(Perk.FETISH_BROODMOTHER) || (partner != null && partner.hasTraitActivated(Perk.FETISH_SEEDER)))) {
+			if(Main.game.isInSex()) {
 				if(this.isPregnant()) {
 					boolean checkNewLitter = true;
 					for (Litter litter : this.getPregnantLitters()) {
